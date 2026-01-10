@@ -34,3 +34,10 @@ El repositorio se organiza en los siguientes componentes, enfocados exclusivamen
 - 💽 [Data Source](config/)
 - 📓 [Notebooks](notebooks/)
 - 🧠 [SQL Profiling](sql/profiling/)
+
+
+### 👤 Teófilo Correa Rojas
+**🔐 Data Analytics Engineer | ⚙️ Governance**
+
+🔗 **LinkedIn:** https://linkedin.com/in/teófilo-correa-rojas
+🌐 **Portafolio web:** https://teofilocorrea.lovable.app
