@@ -26,7 +26,7 @@ Este repositorio concentra la **documentación, configuraciones y lógica analí
 
 El repositorio se organiza en los siguientes componentes, enfocados exclusivamente en **análisis, documentación y configuración lógica** del proceso de Data Profiling.
 
-- 📄 [Documentos técnicos](docs/)
+- 📄 [Documentos técnicos](CoffeSales/docs)
   - [01 Recepción](docs/01_recepcion/)
   - [02 Data Profiling](docs/02_profiling/)
   - [03 Decisiones](docs/03_decisiones/)
