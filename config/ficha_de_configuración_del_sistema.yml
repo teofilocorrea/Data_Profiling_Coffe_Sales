@@ -1,0 +1,33 @@
+# ======================================
+# ENVIRONMENT CONFIGURATION
+# ======================================
+environment: qa
+
+project:
+  name: dirty_cafe_sales_profiling
+  owner: teofilocorrea
+  timezone: America/Santo_Domingo
+
+engine:
+  type: duckdb
+  database_path: data/db/qa.duckdb
+
+storage:
+  source_path: data/source
+  outputs_path: outputs/qa
+
+profiling:
+  dataset: dirty_cafe_sales.csv
+  raw_table: raw.dirty_cafe_sales
+  reports:
+    - preview_sample
+    - describe_table
+    - check_nulls
+    - duplicate_all_columns
+    - duplicate_multi_column
+    - validate_business_rules
+    - validate_business_rules_summary
+
+keys:
+  candidate_keys:
+    - Transaction ID
