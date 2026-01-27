@@ -29,7 +29,6 @@ server_vars.env
 # =========================
 # Datos fuente (si aplica)
 # =========================
-data/source/*.csv
 data/source/*.xlsx
 data/source/*.parquet
 
