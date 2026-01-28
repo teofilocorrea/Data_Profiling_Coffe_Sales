@@ -27,19 +27,27 @@ server_vars.env
 *.duckdb.wal
 
 # =========================
-# Datos fuente (si aplica)
+# Datos fuente
 # =========================
+# Ignorar formatos pesados o no necesarios
 data/source/*.xlsx
 data/source/*.parquet
 
-# (Si decides versionar un CSV específico,
-# elimina la línea anterior o usa excepción con !)
+# Permitir dataset público usado en el proyecto
+!data/source/dirty_cafe_sales.csv
 
 # =========================
 # Outputs generados
 # =========================
+# Ignorar todo por defecto
 data/outputs/
 data/outputs/**
+
+# Permitir artefactos finales (evidencia del profiling)
+!data/outputs/profiling_tables/
+!data/outputs/profiling_tables/business_rules_summary.csv
+!data/outputs/profiling_tables/null_pseudonull_summary.csv
+!data/outputs/profiling_tables/date_format_validation.csv
 
 # =========================
 # Notebooks
