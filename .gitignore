@@ -1,5 +1,5 @@
 # =========================
-# Entorno del sistema
+# Sistema operativo
 # =========================
 .DS_Store
 Thumbs.db
@@ -14,9 +14,10 @@ shelf/
 workspace.xml
 
 # =========================
-# Configuración local sensible
+# Configuración local / sensible
 # =========================
 .env
+*.env
 server_vars.env
 *.local
 
@@ -25,29 +26,33 @@ server_vars.env
 # =========================
 *.duckdb
 *.duckdb.wal
+*.db
+*.sqlite
 
 # =========================
 # Datos fuente
 # =========================
-# Ignorar formatos pesados o no necesarios
+# ❌ NO versionar fuentes pesadas o sensibles
 data/source/*.xlsx
 data/source/*.parquet
 
-# Permitir dataset público usado en el proyecto
-!data/source/dirty_cafe_sales.csv
+# ✅ Permitir CSV cuando son datasets públicos o de ejemplo
+# (ej: Kaggle, datasets educativos)
+!data/source/*.csv
 
 # =========================
 # Outputs generados
 # =========================
-# Ignorar todo por defecto
-data/outputs/
+# ❌ Ignorar outputs por defecto
 data/outputs/**
+data/outputs/
 
-# Permitir artefactos finales (evidencia del profiling)
+# ✅ PERMITIR artefactos finales de profiling
 !data/outputs/profiling_tables/
-!data/outputs/profiling_tables/business_rules_summary.csv
-!data/outputs/profiling_tables/null_pseudonull_summary.csv
-!data/outputs/profiling_tables/date_format_validation.csv
+!data/outputs/profiling_tables/*.csv
+
+# (Opcional) permitir README explicativo
+!data/outputs/README.md
 
 # =========================
 # Notebooks
